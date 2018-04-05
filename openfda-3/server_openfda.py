@@ -12,9 +12,7 @@ class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
 
-        mensaje += "<p>" + "Información medicamento" + "</p>"
-        for a in nombre:
-            mensaje += a + "<br>"
+        mensaje += "<p>" + "Hola mundo!" + "</p>"
         mensaje += "<ul>"
         mensaje += "<li>Recurso solicitado: {}</li>".format(self.path)
         mensaje += "</ul>"
